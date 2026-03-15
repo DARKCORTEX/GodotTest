@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://endless_runner/obstacle.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://c36lp4kok2te5" path="res://icon.svg" id="2_icon"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_obstacle"]
+size = Vector2(40, 80)
+
+[node name="Obstacle" type="Area2D"]
+script = ExtResource("1_script")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 1.25)
+texture = ExtResource("2_icon")
+modulate = Color(1.0, 0.2, 0.2, 1.0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_obstacle")
