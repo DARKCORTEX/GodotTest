@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cbo7brjuvkw5w"]
+
+[ext_resource type="Script" uid="uid://hyxkmqv5cnxf" path="res://Scripts/MainSceneController.gd" id="1_52fb6"]
+[ext_resource type="PackedScene" uid="uid://c3uqdgsemxxy7" path="res://Scenes/level_1.tscn" id="2_6l7je"]
+
+[node name="MainScene" type="Node2D" unique_id=607774478]
+script = ExtResource("1_52fb6")
+_levels = Array[PackedScene]([ExtResource("2_6l7je")])
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1465388630]
+zoom = Vector2(2.465, 2.465)
